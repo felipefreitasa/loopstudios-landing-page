@@ -1,0 +1,64 @@
+.navbar {
+   width: 100%;
+   height: 80px;
+
+   z-index: 20;
+   overflow: hidden;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   background: transparent;
+
+   @media (min-width: 0px) {
+      padding: 0 20px;
+   }
+
+   @media (min-width: 900px) {
+      padding: 0 100px;
+   }
+
+   > ul {
+      list-style: none;
+
+      display: flex;
+
+      font-family: "Alata", sans-serif;
+
+      @media (min-width: 0px) {
+         display: none;
+      }
+
+      @media (min-width: 900px) {
+         display: flex;
+      }
+
+      > li {
+         margin-left: 20px;
+
+         color: #fff;
+         font-size: 14px;
+
+         padding-bottom: 5px;
+
+         border-bottom: 1px solid transparent;
+
+         &:hover {
+            cursor: pointer;
+            
+            border-bottom: 1px solid #fff;
+         }
+      }
+   }
+
+   .menu-teste {
+      background-color: red;
+
+      background-attachment: fixed;
+
+      height: 100vh;
+      width: 100%;
+   }
+
+}

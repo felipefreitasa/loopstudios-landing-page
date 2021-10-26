@@ -1,0 +1,128 @@
+.footer {
+   background-color: #000;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   @media (min-width: 0px) {
+      padding: 40px 20px;
+   }
+
+   @media (min-width: 900px) {
+      padding: 40px 100px;
+   }
+
+   .footer-menu {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media (min-width: 0px) {
+         width: 100%;
+
+         align-items: center ;
+      }
+
+      @media (min-width: 900px) {
+         width: 50%;
+
+         align-items: flex-start;
+      }
+
+      > img {
+         margin-bottom: 20px;
+      }
+
+      > ul {
+         list-style: none;
+
+         display: flex;
+
+         text-align: center;
+
+         @media (min-width: 0px) {
+            flex-direction: column;
+         }
+   
+         @media (min-width: 900px) {
+            flex-direction: row;
+         }
+
+         > li {
+            color: #858585;
+            font-size: 12px;
+            font-family: "Alata", sans-serif;
+            font-weight: 200;
+
+            cursor: pointer;
+
+            padding-bottom: 5px;
+
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+               border-bottom: 1px solid #858585;
+            }
+
+            @media (min-width: 0px) {
+               margin-right: 0px;
+               margin-bottom: 20px;
+            }
+      
+            @media (min-width: 900px) {
+               margin-right: 20px;
+               margin-bottom: 0px;
+            }
+         }
+      }
+   }
+
+   .footer-copyright {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @media (min-width: 0px) {
+         width: 100%;
+
+         margin-top: 15px;
+
+         align-items: center;
+      }
+
+      @media (min-width: 900px) {
+         width: 50%;
+
+         margin-top: 0px;
+
+         align-items: flex-end;
+      }
+
+      .footer-social-media {
+         margin-bottom: 20px;
+
+         > img {
+            cursor: pointer;
+
+            padding-bottom: 5px;
+
+            margin-left: 20px;
+
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+               border-bottom: 1px solid #fff;
+            }
+         }
+      }
+
+      > p {
+         color: #858585;
+         font-size: 12px;
+         font-family: "Alata", sans-serif;
+         font-weight: 200;
+      }
+   }
+}

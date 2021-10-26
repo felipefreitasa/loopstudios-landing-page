@@ -1,0 +1,110 @@
+.our-creations-section {
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   @media (min-width: 0px) {
+      padding: 40px 20px;
+   }
+
+   @media (min-width: 900px) {
+      padding: 40px 100px;
+   }
+
+   .our-creations-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+
+      margin-bottom: 30px;
+
+      > h3 {
+         font-family: "Josefin Sans", sans-serif;
+         color: #292929;
+         font-size: 35px;
+         font-weight: 200;
+
+         text-align: center;
+      }
+
+      > button {
+         font-family: "Josefin Sans", sans-serif;
+         color: #292929;
+         font-weight: bold;
+         font-size: 12px;
+         
+         cursor: pointer;
+
+         padding: 10px 20px;
+
+         background: transparent;
+
+         border: 1px solid #292929;
+
+         &:hover {
+            background-color: #000;
+
+            color: #fff;
+         }
+
+         @media (min-width: 0px) {
+            display: none;
+         }
+      
+         @media (min-width: 760px) {
+            display: flex;
+         }
+      }
+   }
+
+   .our-creactions-cards {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   > button {
+      font-family: "Josefin Sans", sans-serif;
+      color: #292929;
+      font-weight: bold;
+      font-size: 12px;
+      
+      cursor: pointer;
+   
+      padding: 10px 20px;
+
+      background: transparent;
+
+      border: 1px solid #292929;
+
+      width: 40%;
+
+      display: flex;
+      justify-content: center;
+
+      margin: 0 auto;
+      margin-top: 15px;
+
+      &:hover {
+         background-color: #000;
+
+         color: #fff;
+      }
+
+      @media (min-width: 0px) {
+         display: flex;
+      }
+   
+      @media (min-width: 760px) {
+         display: none;
+      }
+   }
+}
